@@ -29,6 +29,8 @@ The top 3 most common brands in this area are Starbucks, Subway, and Circle K in
 
 The top 3 most common cuisines are Pizza, Mexican, and American.
 
+Further Statistics are included in the jupyter notebook
+
 The biggest limitations of these statistics are the following:
 <li>The brands data is very dirty and does not lend itself to automated cleanup containing errors like names starting with 'The' that should not, misspellings, and brands with subtext or subbrands attached to them </li>
 <li>The Cuisines data is very skewed because in the top 10 there are 6 different types of asian cuisines including a catchall asian type and if combined would be far more than the number one spot</li>
