@@ -16,6 +16,20 @@ This program pulls OpenStreetMaps OSM data for the Phoenix Metro and surrounding
 
 It attempts to automate many corrections of the data before creating a few CSV files and a sqlite3 DB file.
 
+The audit.py file runs an audit of street names to show if any have errors or are formatted differently than expected.
+
+The fix.py file fixes the postcode, state and street info, it also contains the shape and process map elements taken from the lessons and adapted for use in this project.
+
+The getset.py file has many variables declared that are used throughout the other py files for this project as well as the creation script for smaller osm files from the main larger osm file
+
+The pullphoenixosm.py file pulls the whole large osm that was used for this data set.
+
+The main.py file is the primary file for running this data it includes the sql queries to get stats for the osm
+
+The output of full run file shows the console output of my pc when ran in its entirety including pulling the large osm file and parsing it in the database.
+
+The PhoenixSmall.osm is included as a small sample of data from the larger set if someone so chooses to run against it.
+
 The database contains tables for nodes, node tags, ways, way nodes, and way tags.
 
 At the time of writing this program, the database has slightly more than 34 Million total rows of information.
