@@ -1,0 +1,4 @@
+the bounding box I used for my large OSM is (32.6020062,-112.9699853,34.318,-111.036001) https://www.openstreetmap.org/export#map=8/33.464/-112.006
+This area is the Phoenix Metro Area including the surrounding cities and other areas.
+I selected this area because I live in the Surprise area and My works territory covers a large portion of the selected area for wireless internet.
+I am more familiar wth the Phoenix metro and surrounding areas than anywhere else. 
