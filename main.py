@@ -6,20 +6,21 @@ import pandas as pd
 from humanize import naturalsize
 import fix
 import pullphoenixosm
+'''WARNING: FULL OSM IS OVER 2 GB AND TAKES A LONG TIME TO PULL AND FILL OUT OTHER FILES WITH 
+APPROXIMITLY A 10 MINUTE RUN TIME ON MID TIER PERSONAL PC IS 15 MINUTES LAST OUTPUT IS TOP 10 CUISINES'''
 
 '''look for lines in this style for full run instructions'''
 
 '''remove the next 2 lines comment tags to get full osm'''
 # pullphoenixosm.get_full_osm()
-pullphoenixosm.create_sample()
-
+# pullphoenixosm.create_sample()
+'''remove the comment tags from line 18-20 and comment out line 21 to run the full
+osm through to create the database '''
 audit.audit_address(get_small_osm())
-audit.audit_address(get_med_osm())
-audit.audit_address(get_osm_filename())
-'''remove the next lines comment tag and comment out the line after that to run the full osm through to create the 
-database '''
-fix.process_map(get_osm_filename())
-# fix.process_map(get_med_osm())
+# audit.audit_address(get_med_osm())
+# audit.audit_address(get_osm_filename())
+# fix.process_map(get_osm_filename())
+fix.process_map(get_small_osm())
 
 # Create database from text files
 if os.path.isfile('phoenix.db'):
