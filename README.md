@@ -8,6 +8,7 @@ Udacity Project 2: Wrangle OpenStreetMap Data
 
 #################################
 
+Please run from main.py and store all other files in the same directory.
 
 It was written to run on python 2.7 with the default pip installs of pandas, humanize, and sqlite3
 
